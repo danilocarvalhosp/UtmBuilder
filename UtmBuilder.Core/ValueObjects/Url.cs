@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace UtmBuilder.Core.ValueObjects
 {
-    internal class Url
+    public class Url : ValueObject
     {
+
     }
 }
