@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using UtmBuilder.Core.Extensions;
 using UtmBuilder.Core.ValueObjects;
 
 namespace UtmBuilder.Core
@@ -23,6 +19,14 @@ namespace UtmBuilder.Core
         /// <summary>
         /// Campaign Details
         /// </summary>
-        public Campaign Campaign { get; } 
+        public Campaign Campaign { get; }
+
+        public override string ToString()
+        {
+            // Benchmark.NET
+            var segments = new List<string>();
+            segments.AddIfNotNull();
+            return $"{Url.Address}?{string.Join("&", segments)}";
+        }
     }
 }
