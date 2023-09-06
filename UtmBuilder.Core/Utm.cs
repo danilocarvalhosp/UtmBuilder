@@ -21,7 +21,8 @@ namespace UtmBuilder.Core
         /// </summary>
         public Campaign Campaign { get; }
 
-
+        public static implicit operator string(Utm utm)
+            => utm.ToString();
 
         public override string ToString()
         {
