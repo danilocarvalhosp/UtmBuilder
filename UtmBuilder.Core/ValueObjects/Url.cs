@@ -20,12 +20,5 @@ namespace UtmBuilder.Core.ValueObjects
         /// </summary>
 
         public string Address { get; }
-
-        public override string ToString()
-        {
-            // Benchmark.NET
-            var str = string.Join("&", null);
-            return "";
-        }
     }
 }
