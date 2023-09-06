@@ -21,6 +21,8 @@ namespace UtmBuilder.Core
         /// </summary>
         public Campaign Campaign { get; }
 
+
+
         public override string ToString()
         {
             // Benchmark.NET
