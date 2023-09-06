@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using UtmBuilder.Core.ValueObjects.Exceptions;
+﻿using UtmBuilder.Core.ValueObjects.Exceptions;
 
 namespace UtmBuilder.Core.ValueObjects
 {
@@ -27,5 +20,12 @@ namespace UtmBuilder.Core.ValueObjects
         /// </summary>
 
         public string Address { get; }
+
+        public override string ToString()
+        {
+            // Benchmark.NET
+            var str = string.Join("&", null);
+            return "";
+        }
     }
 }
