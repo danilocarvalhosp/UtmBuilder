@@ -9,7 +9,7 @@ namespace UtmBuilder.Core
 {
     public class Utm
     {
-        public Url Url { get; set; }
-        public Campaign Campaign { get; set; }
+        public Url Url { get; set; } 
+        public Campaign Campaign { get; set; } 
     }
 }
