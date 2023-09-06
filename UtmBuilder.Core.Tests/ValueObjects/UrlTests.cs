@@ -12,23 +12,17 @@ namespace UtmBuilder.Core.Tests.ValueObjects
     public class UrlTests
     {
         [TestMethod("Deve retornar uma exceção quando a URL for inválida")]
+        [ExpectedException(typeof(InvalidUrlException))]
         public void Dado_uma_url_invalida_deve_retornar_uma_excecao()
         {
-            try
-            {
-                var url = new Url("banana");
-                Assert.Fail();
-            }
-            catch (InvalidUrlException e)
-            {
-                Assert.IsTrue(true);
-            }
+            new Url("banana");
         }
 
         [TestMethod("Não deve retornar uma exceção quando a URL for válida")]
         public void Dado_uma_url_valida_nao_deve_retornar_uma_excecao()
         {
-            Assert.Fail();
+            new Url("https://balta.io");
+            Assert.IsTrue(true);
         }
     }
 }
