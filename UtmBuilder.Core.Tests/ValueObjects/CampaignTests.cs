@@ -26,6 +26,7 @@ namespace UtmBuilder.Core.Tests.ValueObjects
                     Assert.Fail();
                 }
                 catch (InvalidCampaignException e)
+                    when(e.Message == "Source is invalid")
                 {
                     Assert.IsTrue(true);
                 }
