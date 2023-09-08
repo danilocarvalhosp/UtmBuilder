@@ -42,7 +42,7 @@ namespace UtmBuilder.Core.Tests.ValueObjects
                     new Url(link);
                     Assert.Fail();
                 }
-                catch (InvalidUrlException e)
+                catch (InvalidUrlException)
                 {
                     Assert.IsTrue(true);
                 }
